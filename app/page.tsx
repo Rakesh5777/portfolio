@@ -5,6 +5,7 @@ import HeroSection from '@/components/hero-section'
 import ExperienceSection from '@/components/experience-section'
 import AnimatedBackground from '@/components/animated-background'
 import {Analytics} from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
       <HeroSection />
       <ExperienceSection />
       <Analytics />
+      <SpeedInsights />
     </main>
-  )
+  );
 }
 
