@@ -96,7 +96,7 @@ export default function ExperienceSection() {
           className="mt-12 text-center"
         >
           <a
-            href="/Rakesh_Reddy_Kunda_Resume.pdf"
+            href="/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
