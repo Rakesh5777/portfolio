@@ -44,7 +44,9 @@ export default function ExperienceSection() {
         transition={{ duration: 0.5 }}
         className="max-w-3xl mx-auto px-4"
       >
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-foreground">Experience</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-foreground">
+          Experience
+        </h2>
         <div className="space-y-12">
           {experiences.map((exp, index) => (
             <motion.div
@@ -74,30 +76,37 @@ export default function ExperienceSection() {
             className="relative pl-8 border-l-2 border-border"
           >
             <div className="absolute w-4 h-4 bg-primary/20 rounded-full -left-[9px] top-1"></div>
-            <h3 className="text-xl font-bold text-foreground">{education.degree}</h3>
+            <h3 className="text-xl font-bold text-foreground">
+              {education.degree}
+            </h3>
             <p className="text-muted-foreground">{education.institution}</p>
-            <p className="text-sm text-muted-foreground">{education.location}</p>
-            <p className="text-sm text-muted-foreground mb-4">{education.period}</p>
+            <p className="text-sm text-muted-foreground">
+              {education.location}
+            </p>
+            <p className="text-sm text-muted-foreground mb-4">
+              {education.period}
+            </p>
           </motion.div>
         </div>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: (experiences.length + 1) * 0.2 }}
           className="mt-12 text-center"
         >
-          <a 
-            href="/Rakesh_Reddy_Kunda_Resume.pdf" 
-            download
+          <a
+            href="/Rakesh_Reddy_Kunda_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
           >
-            Download Resume
+            View Resume
             <FileDown className="w-5 h-5" />
           </a>
         </motion.div>
       </motion.div>
     </section>
-  )
+  );
 }
 
