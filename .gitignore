@@ -62,3 +62,5 @@ logs/
 *.war
 *.zip
 *.tar.gz
+.vercel
+.next
